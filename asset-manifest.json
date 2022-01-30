@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/friendlily/static/css/main.4e88a2a4.css",
+    "main.js": "/friendlily/static/js/main.bcb2c275.js",
+    "index.html": "/friendlily/index.html",
+    "main.4e88a2a4.css.map": "/friendlily/static/css/main.4e88a2a4.css.map",
+    "main.bcb2c275.js.map": "/friendlily/static/js/main.bcb2c275.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e88a2a4.css",
+    "static/js/main.bcb2c275.js"
+  ]
+}
