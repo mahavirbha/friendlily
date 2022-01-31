@@ -1,0 +1,1 @@
+import person1 from '../assets/person/1.jpg';
