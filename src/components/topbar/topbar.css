@@ -109,11 +109,15 @@
 
 
 @media screen and (max-width:600px) {
+
+    .topbarContainer{
+        width: 100%;
+    }
     .searchInput:focus{
         width: auto;
     }
     .searchInput{
-        /* display: none; */
+        display: none;
         
     }
     .topbarCenter {
