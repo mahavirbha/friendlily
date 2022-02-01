@@ -1,36 +1,44 @@
 import './post.css';
 import { person1, person2,person3,person4,person5} from '../../assets/images';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { post1,post2,post3,post4,post5,post6,post7,post8,post9,post10} from '../../assets/images';
 import {like,heart} from '../../assets/images';
+import { Users } from '../../dummyData';
 
-export default function Post() {
-  return (<div className='post'>
-      <div className="postWrapper">
-          <div className="postTop">
+
+export default function Post({post}) {
+
+    const user = Users.filter((u) => u.id === post.userId);
+    const uName = user[0];
+    console.log(uName);
+    const na = uName.username;
+    const dp = uName.profilePicture;
+    console.log(na);
+    return (<div className='post'>
+        <div className="postWrapper">
+            <div className="postTop">
                 <div className="postTopLeft">
-                    <img src={person1} alt="Profile Pic" className="postProfileImg" />
-                    <span className="postUsername">Mahavirbha Chauhan</span>
-                    <span className="postDate">5 mins ago</span>  
+                    <img src={dp} alt="Profile Pic" className="postProfileImg" />
+                    <span className="postUsername">{na}</span>
+                    <span className="postDate">{post.date}</span>  
                 </div>
                 <div className="postTopRight">
                     <MoreVertIcon />                                    
                 </div>      
-          </div>
-          <div className="postCenter">
-              <span className="postText">Hey! It's My First Post :)</span>
-              <img src={post1} alt="" className="postImg" />
-          </div>
-          <div className="postBottom">
-              <div className="postBottomLeft">
-                  <img src={like} alt="" className="likeIcon" />
-                  <img src={heart} alt="" className="likeIcon" />
-                  <span className="postLikeCounter">32 People like it</span>
-              </div>
-              <div className="postBottomRight">
-                  <span className="postCommentText">9 comments</span>
-              </div>
-          </div>
-      </div>
-  </div>);
+            </div>
+            <div className="postCenter">
+                <span className="postText">{post?.desc}</span>
+                <img src={post.photo} alt="" className="postImg" />
+            </div>
+            <div className="postBottom">
+                <div className="postBottomLeft">
+                    <img src={like} alt="" className="likeIcon" />
+                    <img src={heart} alt="" className="likeIcon" />
+                    <span className="postLikeCounter">{post.like} People like it</span>
+                </div>
+                <div className="postBottomRight">
+                    <span className="postCommentText">{post.comment} comments</span>
+                </div>
+            </div>
+        </div>
+    </div>);
 }
