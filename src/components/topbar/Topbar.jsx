@@ -3,7 +3,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
-import { person1, person2,person3,person4,person5} from '../../assets/images';
+import { person1} from '../../assets/images';
 
 export default function Topbar() {
   return (
