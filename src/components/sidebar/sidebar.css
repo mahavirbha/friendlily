@@ -37,11 +37,12 @@
 }
 
 .sidebarButton{
-    width: 50px;
+    width: auto;
     border: none;
     padding: 10px;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .sidebarHr{
@@ -52,6 +53,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* -webkit-box-shadow: 10px 1px 15px -7px #f1ccbbcb; 
+    box-shadow: 10px 1px 15px -7px rgba(0,0,0,0.3); */
 }
 
 .sidebarFriend{

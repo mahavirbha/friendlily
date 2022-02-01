@@ -2,6 +2,7 @@ import './post.css';
 import { person1, person2,person3,person4,person5} from '../../assets/images';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { post1,post2,post3,post4,post5,post6,post7,post8,post9,post10} from '../../assets/images';
+import {like,heart} from '../../assets/images';
 
 export default function Post() {
   return (<div className='post'>
@@ -21,7 +22,14 @@ export default function Post() {
               <img src={post1} alt="" className="postImg" />
           </div>
           <div className="postBottom">
-
+              <div className="postBottomLeft">
+                  <img src={like} alt="" className="likeIcon" />
+                  <img src={heart} alt="" className="likeIcon" />
+                  <span className="postLikeCounter">32 People like it</span>
+              </div>
+              <div className="postBottomRight">
+                  <span className="postCommentText">9 comments</span>
+              </div>
           </div>
       </div>
   </div>);

@@ -20,6 +20,11 @@ import post8 from './post/8.jpeg';
 import post9 from './post/9.jpeg';
 import post10 from './post/10.jpeg';
 
+import ad from './ad.png';
+import gift from './gift.png';
+import heart from './heart.png';
+import like from './like.png';
+
 export {
     person1,
     person2,
@@ -43,4 +48,8 @@ export {
     post9,
     post10,
 
+    ad,
+    gift,
+    heart,
+    like
 };
