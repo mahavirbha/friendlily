@@ -1,80 +1,102 @@
-.rightbar{
-    flex:3.5;
+.rightbar {
+  flex: 3.5;
+  position: sticky;
+  top: 40px;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
 }
 
-.rightbarWrapper{
-    padding: 20px 20px 0 0;
+.rightbarWrapper {
+  padding: 20px 20px 0 0;
 }
 
-.birthdayContainer{
-    display: flex;
-    align-items: center;
-    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
 
-.birthdayImg{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-.birthdayText{
-    font-weight: 300;
-    font-size: 15px;
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
 }
 
-.rightbarAd{
-    width: 100%;
-    border-radius: 10px;
-    margin: 30px 0;
+.rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
 }
 
-.rightbarOnlineContainer{
-   /* -webkit-box-shadow: -10px 0px 15px -7px rgba(0,0,0,0.5); 
+.rightbarOnlineContainer {
+  /* -webkit-box-shadow: -10px 0px 15px -7px rgba(0,0,0,0.5); 
     box-shadow: -10px 0px 15px -7px rgba(0,0,0,0.5); */
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
-.rightbarTitle{
-    margin-bottom: 20px;
+.rightbarTitle {
+  margin-bottom: 20px;
 }
 
-.rightbarFriendList{
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.rightbarFriend{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.rightbarProfileImgContainer{
-    margin-right: 10px;
-    position: relative;
+.rightbarInfo {
+  margin-bottom: 30px;
 }
 
-.rightbarProfileImg{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+.rightbarInfoItem {
+  margin-bottom: 10px;
 }
 
-.rightbarOnline {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: limegreen;
-    position: absolute;
-    top: -5px;
-    right: -2px;
-    border: 2px solid white;
+.rightbarInfoKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: #555;
 }
 
-.rightbarUsername{
-    font-weight: 500;
+.rightbarInfoValue {
+  font-weight: 300;
+}
+
+.rightbarFollowings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightbarFollowingImg {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.rightbarFollowingName {
+  font-size: 12px;
+  font-weight: 500;
 }

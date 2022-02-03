@@ -9,6 +9,8 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
 import { person1, person2,person3,person4,person5,person6,person7,person8,person9,person10} from '../../assets/images';
+import CloseFriend from '../closeFriend/CloseFriend';
+import { Users } from '../../dummyData';
 
 export default function Sidebar() {
   return (<div className='sidebar'>
@@ -82,55 +84,11 @@ export default function Sidebar() {
         <button className="sidebarButton">Show More</button>
         <hr className='sidebarHr'/>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
 
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-          
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
+          {Users.map(u=>(
+            <CloseFriend key={u.id} user={u} />
+          ))}
 
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
-
-          <li className="sidebarFriend">
-            <img src={person2} alt="Parth" className="sidebarFriendImg" />
-            <span className="sidebarFriendname">Parth Bhavsar</span>
-          </li>
         </ul>
       </div>
   </div>);

@@ -1,12 +1,15 @@
 import './rightbar.css';
 import {gift,ad} from '../../assets/images'
 import { person1, person2,person3,person4,person5,person6,person7,person8,person9,person10} from '../../assets/images';
+import { Users } from '../../dummyData';
+import Online from '../online/Online';
 
 
+export default function Rightbar({profile}) {
 
-export default function Rightbar() {
-  return (<div className='rightbar'>
-      <div className="rightbarWrapper">
+  const HomeRightbar = () => {
+    return(
+      <>
         <div className="birthdayContainer">
           <img src={gift} alt="gift img" className="birthdayImg" />
           <span className="birthdayText"><b>Divyesh Varu</b> and <b>3 other friends</b> have a birthday today.</span>
@@ -15,51 +18,78 @@ export default function Rightbar() {
         <div className="rightbarOnlineContainer">
 
           <h4 className="rightbarTitle">Online Friends</h4>
+
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={person3} alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>              
-            </div>
-            <span className="rightbarUsername">Divyesh Varu</span>
-          </li>
-
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={person3} alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>              
-            </div>
-            <span className="rightbarUsername">Divyesh Varu</span>
-          </li>
-
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={person3} alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>              
-            </div>
-            <span className="rightbarUsername">Divyesh Varu</span>
-          </li>
-
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={person3} alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>              
-            </div>
-            <span className="rightbarUsername">Divyesh Varu</span>
-          </li>
-
-          <li className="rightbarFriend">
-            <div className="rightbarProfileImgContainer">
-              <img src={person3} alt="" className="rightbarProfileImg" />
-              <span className="rightbarOnline"></span>              
-            </div>
-            <span className="rightbarUsername">Divyesh Varu</span>
-          </li>
-
+          {Users.map(u=>(
+            <Online key={u.id} user={u} />
+          ))}
         </ul>
 
         </div>
-        
-      </div>
-  </div>);
+      </>
+    );
+  };
+
+
+  const ProfileRightbar = () => {
+    return (
+      <>
+        <h4 className="rightbarTitle">User information</h4>
+        <div className="rightbarInfo">
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">City:</span>
+            <span className="rightbarInfoValue">Himmatnagar</span>
+          </div>
+
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">From:</span>
+            <span className="rightbarInfoValue">Bayad</span>
+          </div>
+
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">Relationship:</span>
+            <span className="rightbarInfoValue">Single</span>
+          </div>
+          
+        </div>
+
+        <h4 className="rightbarTitle">User friends</h4>
+        <div className="rightbarFollowings">
+          <div className="rightbarFollowing">
+            <img src={person1} alt="" className="rightbarFollowingImg" />
+            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
+          </div>
+
+          <div className="rightbarFollowing">
+            <img src={person1} alt="" className="rightbarFollowingImg" />
+            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img src={person1} alt="" className="rightbarFollowingImg" />
+            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img src={person1} alt="" className="rightbarFollowingImg" />
+            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
+          </div>
+          <div className="rightbarFollowing">
+            <img src={person1} alt="" className="rightbarFollowingImg" />
+            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
+          </div>
+          
+        </div>
+      </>
+    );
+  }
+
+  return (
+    <div className='rightbar'>
+        <div className="rightbarWrapper">
+          {profile ? <ProfileRightbar /> : <HomeRightbar />}
+          {/* <ProfileRightbar /> */}
+          {/* <HomeRightbar /> */}
+
+        </div>
+    </div>
+  );
 }
