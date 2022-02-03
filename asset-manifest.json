@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/friendlily/static/css/main.4d97dc36.css",
-    "main.js": "/friendlily/static/js/main.a8ab9325.js",
+    "main.css": "/friendlily/static/css/main.eb3d09a3.css",
+    "main.js": "/friendlily/static/js/main.0dc571d4.js",
     "static/media/ad.png": "/friendlily/static/media/ad.afd28e7ed07fdb0bd833.png",
     "static/media/7.jpeg": "/friendlily/static/media/7.fea4c13a8959077602cf.jpeg",
     "static/media/7.jpg": "/friendlily/static/media/7.6de33da691c65885f034.jpg",
@@ -27,11 +27,11 @@
     "static/media/like.png": "/friendlily/static/media/like.be1d10c9aba02398fa0c.png",
     "static/media/gift.png": "/friendlily/static/media/gift.4a9c4d62df0cccc684e3.png",
     "index.html": "/friendlily/index.html",
-    "main.4d97dc36.css.map": "/friendlily/static/css/main.4d97dc36.css.map",
-    "main.a8ab9325.js.map": "/friendlily/static/js/main.a8ab9325.js.map"
+    "main.eb3d09a3.css.map": "/friendlily/static/css/main.eb3d09a3.css.map",
+    "main.0dc571d4.js.map": "/friendlily/static/js/main.0dc571d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d97dc36.css",
-    "static/js/main.a8ab9325.js"
+    "static/css/main.eb3d09a3.css",
+    "static/js/main.0dc571d4.js"
   ]
 }
