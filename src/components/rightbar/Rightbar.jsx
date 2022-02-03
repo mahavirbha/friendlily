@@ -53,29 +53,22 @@ export default function Rightbar({profile}) {
           
         </div>
 
-        <h4 className="rightbarTitle">User friends</h4>
+        <h4 className="rightbarTitle">Friends</h4>
         <div className="rightbarFollowings">
-          <div className="rightbarFollowing">
+
+          {Users.map(u=>(
+              <div className='rightbarFollowing'>
+              <img src={u.profilePicture} alt="" className="rightbarFollowingImg" />
+              <span className="rightbarFollowingName">{u.username}</span>
+              </div>
+          ))}
+
+          {/* <div className="rightbarFollowing">
             <img src={person1} alt="" className="rightbarFollowingImg" />
             <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
           </div>
 
-          <div className="rightbarFollowing">
-            <img src={person1} alt="" className="rightbarFollowingImg" />
-            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img src={person1} alt="" className="rightbarFollowingImg" />
-            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img src={person1} alt="" className="rightbarFollowingImg" />
-            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
-          </div>
-          <div className="rightbarFollowing">
-            <img src={person1} alt="" className="rightbarFollowingImg" />
-            <span className="rightbarFollowingName">Mahavirbha Chauhan</span>
-          </div>
+          */}
           
         </div>
       </>
