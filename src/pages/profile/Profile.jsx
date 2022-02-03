@@ -10,7 +10,7 @@ import { person1,post3} from '../../assets/images';
 export default function Profile() {
   return(
     <>
-        <Topbar/>
+        {/* <Topbar/> */}
         <div className="profile">
             <Sidebar/>
             <div className="profileRight">
