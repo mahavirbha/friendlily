@@ -8,6 +8,7 @@ import post07 from './assets/post/7.jpeg';
 import post08 from './assets/post/8.jpeg';
 import post09 from './assets/post/9.jpeg';
 import post010 from './assets/post/10.jpeg';
+import post011 from './assets/post/11.jpg';
 
 import per1 from './assets/person/1.jpg';
 import per2 from './assets/person/2.jpg';
@@ -19,6 +20,7 @@ import per7 from './assets/person/7.jpg';
 import per8 from './assets/person/8.jpg';
 import per9 from './assets/person/9.jpg';
 import per10 from './assets/person/10.jpg';
+import per11 from './assets/person/11.jpg';
 
 export const Users = [
     {
@@ -70,6 +72,11 @@ export const Users = [
         id: 10,
         profilePicture: per10,
         username: "ketan__2907",
+    },
+    {
+        id: 11,
+        profilePicture: per11,
+        username: "rahul1353rkj",
     },
 ];
 
@@ -164,4 +171,13 @@ export const Posts = [
         like: 5,
         comment: 2,
     },
+    {
+        id: 11,
+        // desc: "love For All, hatred for None.",
+        photo: post011,
+        date: "1 Year Ago",
+        userId: 11,
+        like: 40,
+        comment: 12,
+    }
 ]
