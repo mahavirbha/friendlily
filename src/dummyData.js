@@ -175,9 +175,9 @@ export const Posts = [
         id: 11,
         // desc: "love For All, hatred for None.",
         photo: post011,
-        date: "1 Year Ago",
+        date: "just now",
         userId: 11,
-        like: 40,
+        like: 32,
         comment: 12,
-    }
+    },
 ]

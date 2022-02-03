@@ -60,12 +60,15 @@ export default function Home() {
         </div>
 
         {profileState ? <Profile/> : ""}
-        <div className="homeContainer">
-            <Sidebar/>
-            <Feed/>
-            <Rightbar profile={profileState}/>        
-        </div>
-        </>
+        {profileState ? "" : (<>
+            <div className="homeContainer">
+                <Sidebar/>
+                <Feed/>
+                <Rightbar profile={profileState}/>        
+            </div>
+        </>)
+        }
+    </>
         
     );
 }
