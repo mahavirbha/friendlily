@@ -3,7 +3,6 @@ import "./login.css";
 export default function Login() {
   return (
     <div className="login">
-        {console.log("test")}
         <div className="loginWrapper">
             <div className="loginLeft">
                 <h3 className="loginLogo">Friendlily</h3>
