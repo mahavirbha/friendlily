@@ -1,4 +1,4 @@
-.post{
+.post {
     width: 100%;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
@@ -6,75 +6,152 @@
     margin: 30px 0;
 }
 
-.postWrapper{
+.postWrapper {
     padding: 10px;
 }
 
-.postTop{
+.postTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.postTopLeft{
+.postTopLeft {
     display: flex;
     align-items: center;
 }
 
-.postProfileImg{
+.postProfileImg {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.postUsername{
+.postUsername {
     font-size: 15px;
     font-weight: 500;
     margin: 0 10px;
 }
 
-.postDate{
+.postDate {
     font-size: 12px;
 }
 
-.postCenter{
+.postCenter {
     margin: 20px 0;
 }
 
-.postImg{
+.postImg {
     margin-top: 20px;
     width: 100%;
     max-height: 500px;
     object-fit: contain;
 }
 
-.postBottom{
+.postBottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.postBottomLeft{
+.postBottomLeft {
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
 
-.likeIcon{
+.likeIcon {
     width: 24px;
     height: 24px;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.postLikeCounter{
+.postLikeCounter {
     font-size: 15px;
 }
 
-.postCommentText{
+.postCommentText {
     cursor: pointer;
     border-bottom: 1px dashed gray;
     font-size: 15px;
 }
 
+.ctabtn {
+    width: auto;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow: auto;
+    max-height: 90%;
+    min-height: 608px;
+}
+
+.iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: none;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Existing Post Styles (Add these styles if not already present) */
+.post {
+    /* Your existing post styles */
+}
+
+.postWrapper {
+    /* Your existing post wrapper styles */
+}
+
+.postTop,
+.postBottom,
+.postCenter {
+    /* Your existing post top, bottom, and center styles */
+}
+
+.postImgButton {
+    /* Your styles for the button that opens the modal */
+    cursor: pointer;
+}
+
+.bottomdsc {
+    font-weight: 300;
+}

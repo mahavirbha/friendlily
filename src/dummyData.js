@@ -22,6 +22,10 @@ import per9 from './assets/person/9.jpg';
 import per10 from './assets/person/10.jpg';
 import per11 from './assets/person/11.jpg';
 
+import amoga_logo from './assets/logo/amoga_co_logo.jpg';
+import amogaAd from './assets/ads/amoga.jpg';
+import amogaAd2 from './assets/ads/amoga2.jpg';
+
 export const Users = [
     {
         id: 1,
@@ -77,6 +81,11 @@ export const Users = [
         id: 11,
         profilePicture: per11,
         username: "rahul1353rkj",
+    },
+    {
+        id: 12,
+        profilePicture: amoga_logo,
+        username: "Amoga",
     },
 ];
 
@@ -179,5 +188,30 @@ export const Posts = [
         userId: 11,
         like: 32,
         comment: 12,
+    },
+]
+
+export const Ads = [
+    {
+        id: 101,
+        desc: "Amoga - A Playground for Business Agility and Digital Transformation",
+        photo: amogaAd,
+        date: "sponsered",
+        userId: 12,
+        is_ad: true,
+        desc2: "Amoga is a low-code work platform that enables businesses to build enterprise-grade applications 10x faster than traditional software.",
+        cta_text: "Learn More",
+        cta_link: "https://canvas2.amoga.app/applications/4fb3b93a-c322-4565-94ec-5d3dd1076e37?height=500?utm_medium=friendlily"
+    },
+    {
+        id: 102,
+        desc: "Low-Code SaaS Platforms: Are They All Similar?",
+        photo: amogaAd2,
+        date: "sponsered",
+        userId: 12,
+        is_ad: true,
+        desc2: "Delve into the world of Low-code SaaS platforms to uncover the unique features and distinctions that set them apart.",
+        cta_text: "Learn More",
+        cta_link: "https://canvas2.amoga.app/applications/4fb3b93a-c322-4565-94ec-5d3dd1076e37?height=500?utm_medium=friendlily"
     },
 ]
